@@ -1,0 +1,20 @@
+import DelegationBounds
+
+#print axioms DelegationBounds.menu_score_lower_bounds_best_response
+#print axioms DelegationBounds.knapsack_5item_offline_optimum
+#print axioms DelegationBounds.knapsack_5item_deterministic_cases
+#print axioms DelegationBounds.knapsack_5item_randomized_case_bounds
+#print axioms DelegationBounds.knapsack_universal_randomized_limit_30_61
+#print axioms DelegationBounds.delegation_universal_sandwich
+#print axioms DelegationBounds.forced_item_pointwise_identity
+#print axioms DelegationBounds.threshold_tail_bound_monotone
+#print axioms DelegationBounds.clipped_optimum_variance_step_bound
+#print axioms DelegationBounds.cantelli_mu_less_than_five
+#print axioms DelegationBounds.gamma_case1_exact_positivity
+#print axioms DelegationBounds.exp_15_8_taylor_beats_13_2
+#print axioms DelegationBounds.degree7_poly_positivity_bernstein_eval
+#print axioms DelegationBounds.seed_reserve_gap_positive
+#print axioms DelegationBounds.safe_singleton_normalization_ratio
+#print axioms DelegationBounds.profile_stoploss_monotone_sandwich
+#print axioms DelegationBounds.profile_clipping_decomposition_sum
+#print axioms DelegationBounds.scaled_menu_score_homogeneity

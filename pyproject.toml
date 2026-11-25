@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delegation-downward-closed-certificates"
+version = "1.0.0"
+description = "Constructive Lean 4.35.0 formalization and exact-rational certificates for Improved Downward-Closed Delegation Bounds (arXiv:2611.33095)"
+authors = [{ name = "Lluis Eriksson" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

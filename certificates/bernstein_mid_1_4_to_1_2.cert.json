@@ -1,0 +1,29 @@
+{
+  "schema": "DELEG-DC-CERT-1.0",
+  "mode": "bernstein_analytic_cert",
+  "name": "bernstein_mid_1_4_to_1_2",
+  "payload": {
+    "interval_left": "1/4",
+    "interval_right": "1/2",
+    "expected_exp_gap": "3772963/234881024",
+    "expected_case1_gap": "168034/70785",
+    "expected_bernstein_coeffs": [
+      "249075/8192",
+      "365355/14336",
+      "780859/43008",
+      "26997/2560",
+      "15781/3584",
+      "129/128",
+      "921/896",
+      "141/32"
+    ],
+    "expected_min_beta": "129/128",
+    "probe_points": [
+      "1/4",
+      "5/16",
+      "3/8",
+      "7/16",
+      "1/2"
+    ]
+  }
+}

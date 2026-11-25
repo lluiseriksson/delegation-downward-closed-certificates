@@ -1,0 +1,15 @@
+{
+  "schema": "DELEG-DC-CERT-1.0",
+  "mode": "knapsack_impossibility_cert",
+  "name": "knap5_sec3_eps200_eta200",
+  "payload": {
+    "jackpot_prob": "1/200",
+    "eta": "1/200",
+    "expected_V": "6083/300",
+    "expected_det_max": "10",
+    "expected_det_ratio": "3000/6083",
+    "expected_rand_case1_bound": "180199/18000",
+    "expected_rand_case2_bound": "1801393/180000",
+    "expected_rand_ratio": "2281/4620"
+  }
+}

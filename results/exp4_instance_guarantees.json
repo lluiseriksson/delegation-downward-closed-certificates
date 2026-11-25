@@ -1,0 +1,52 @@
+{
+  "rows": [
+    {
+      "name": "thresh_knap4_z3",
+      "mode": "single_threshold_guarantee_cert",
+      "ratio_val": 0.67677,
+      "ratio_exact": "67/99"
+    },
+    {
+      "name": "thresh_sec3_z10",
+      "mode": "single_threshold_guarantee_cert",
+      "ratio_val": 0.49456,
+      "ratio_exact": "500/1011"
+    },
+    {
+      "name": "thresh_p4_indset_z4",
+      "mode": "single_threshold_guarantee_cert",
+      "ratio_val": 0.73384,
+      "ratio_exact": "193/263"
+    },
+    {
+      "name": "thresh_norm_safe_z2",
+      "mode": "single_threshold_guarantee_cert",
+      "ratio_val": 0.63235,
+      "ratio_exact": "43/68"
+    },
+    {
+      "name": "alg2_thresh_knap4",
+      "mode": "capped_menu_seed_profile_cert",
+      "ratio_val": 0.72222,
+      "ratio_exact": "13/18"
+    },
+    {
+      "name": "alg2_seeds_upper_p4",
+      "mode": "capped_menu_seed_profile_cert",
+      "ratio_val": 0.76426,
+      "ratio_exact": "201/263"
+    },
+    {
+      "name": "alg2_seeds_reserve_norm",
+      "mode": "capped_menu_seed_profile_cert",
+      "ratio_val": 0.72059,
+      "ratio_exact": "49/68"
+    },
+    {
+      "name": "alg2_seeds_reserve_sec3",
+      "mode": "capped_menu_seed_profile_cert",
+      "ratio_val": 0.49456,
+      "ratio_exact": "500/1011"
+    }
+  ]
+}

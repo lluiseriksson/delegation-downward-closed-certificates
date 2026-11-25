@@ -1,0 +1,92 @@
+{
+  "schema": "DELEG-DC-CERT-1.0",
+  "mode": "single_threshold_guarantee_cert",
+  "name": "thresh_knap4_z3",
+  "payload": {
+    "num_items": 4,
+    "feasible_family": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "item_supports": [
+      [
+        {
+          "value": "2",
+          "prob": "1/2"
+        },
+        {
+          "value": "0",
+          "prob": "1/2"
+        }
+      ],
+      [
+        {
+          "value": "2",
+          "prob": "1/2"
+        },
+        {
+          "value": "0",
+          "prob": "1/2"
+        }
+      ],
+      [
+        {
+          "value": "3",
+          "prob": "1/3"
+        },
+        {
+          "value": "1",
+          "prob": "2/3"
+        }
+      ],
+      [
+        {
+          "value": "5",
+          "prob": "1/4"
+        },
+        {
+          "value": "0",
+          "prob": "3/4"
+        }
+      ]
+    ],
+    "threshold_z": "3",
+    "clip_c": "3/2",
+    "expected_V": "33/8",
+    "expected_B_z": "43/16",
+    "expected_menu_score": "67/24",
+    "expected_clipped_mean": "39/16",
+    "expected_clipped_var": "135/256"
+  }
+}

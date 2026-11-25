@@ -1,0 +1,7 @@
+name = "delegation_bounds"
+version = "1.0.0"
+defaultTargets = ["DelegationBounds"]
+moreLeanArgs = ["-j", "1"]
+
+[[lean_lib]]
+name = "DelegationBounds"

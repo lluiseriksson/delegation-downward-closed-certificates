@@ -1,0 +1,100 @@
+{
+  "schema": "DELEG-DC-CERT-1.0",
+  "mode": "capped_menu_seed_profile_cert",
+  "name": "alg2_seeds_reserve_norm",
+  "payload": {
+    "num_items": 4,
+    "feasible_family": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "item_supports": [
+      [
+        {
+          "value": "1",
+          "prob": "1"
+        }
+      ],
+      [
+        {
+          "value": "3/2",
+          "prob": "1/2"
+        },
+        {
+          "value": "1/2",
+          "prob": "1/2"
+        }
+      ],
+      [
+        {
+          "value": "2",
+          "prob": "1/3"
+        },
+        {
+          "value": "1/2",
+          "prob": "2/3"
+        }
+      ],
+      [
+        {
+          "value": "4",
+          "prob": "1/4"
+        },
+        {
+          "value": "0",
+          "prob": "3/4"
+        }
+      ]
+    ],
+    "cap_c": "3/2",
+    "cutoffs": [
+      "3",
+      "3",
+      "3",
+      "3"
+    ],
+    "open_cutoffs": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "body_type": "seeds_reserve",
+    "level_t": "2",
+    "upper_u": null,
+    "reserve_a": "1/2",
+    "profile_levels": [
+      "1",
+      "3/2",
+      "2",
+      "3"
+    ],
+    "expected_V": "17/6",
+    "expected_menu_score": "49/24",
+    "expected_beats_29_70": true,
+    "expected_seed_count": 14
+  }
+}

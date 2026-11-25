@@ -1,0 +1,80 @@
+{
+  "schema": "DELEG-DC-CERT-1.0",
+  "mode": "single_threshold_guarantee_cert",
+  "name": "thresh_norm_safe_z2",
+  "payload": {
+    "num_items": 4,
+    "feasible_family": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "item_supports": [
+      [
+        {
+          "value": "1",
+          "prob": "1"
+        }
+      ],
+      [
+        {
+          "value": "3/2",
+          "prob": "1/2"
+        },
+        {
+          "value": "1/2",
+          "prob": "1/2"
+        }
+      ],
+      [
+        {
+          "value": "2",
+          "prob": "1/3"
+        },
+        {
+          "value": "1/2",
+          "prob": "2/3"
+        }
+      ],
+      [
+        {
+          "value": "4",
+          "prob": "1/4"
+        },
+        {
+          "value": "0",
+          "prob": "3/4"
+        }
+      ]
+    ],
+    "threshold_z": "2",
+    "clip_c": "3/2",
+    "expected_V": "17/6",
+    "expected_B_z": "13/8",
+    "expected_menu_score": "43/24",
+    "expected_clipped_mean": "49/24",
+    "expected_clipped_var": "311/576"
+  }
+}
