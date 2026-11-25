@@ -92,17 +92,28 @@ def make_fig2() -> None:
     bs = [r["b_val"] for r in samps]
     ps = [r["P_val"] for r in samps]
     ax1.plot(bs, ps, color="#1f618d", lw=2.1, label=r"Exact $P(b)$ (deg. 7)")
-    ax1.hlines(d3["left_min_val"], 2.0 / 13.0, 0.4, colors="#117a65", linestyles="--", lw=1.8,
+    ax1.hlines(d3["left_min_val"], 2.0 / 13.0, 0.4, colors="#117a65", linestyles="--", lw=1.7,
                label=r"$\min\beta_k = 447966/78125$ on $[2/13,2/5]$")
-    ax1.hlines(d3["right_min_val"], 0.4, 2.0 / 3.0, colors="#922b21", linestyles="--", lw=1.8,
+    ax1.hlines(d3["right_min_val"], 0.4, 2.0 / 3.0, colors="#922b21", linestyles="--", lw=1.7,
                label=r"$\min\beta_k = 6518/118125$ on $[2/5,2/3]$")
-    ax1.axvline(0.4, color="#555555", ls=":", lw=1.0)
+    ax1.hlines(129.0 / 128.0, 0.25, 0.5, colors="#7d3c98", linestyles=":", lw=1.5,
+               label=r"$\min\beta_k = 129/128$ on $[1/4,1/2]$")
+    ax1.hlines(141.0 / 32.0, 0.5, 2.0 / 3.0, colors="#b7950b", linestyles="-.", lw=1.5,
+               label=r"$\min\beta_k = 141/32$ on $[1/2,2/3]$")
+    ax1.scatter([0.46, 0.5, 2.0 / 3.0], [2.66, 141.0 / 32.0, 33250.0 / 729.0],
+                color="#1f618d", s=16, zorder=5)
+    ax1.annotate(r"$\min P \approx 2.66$", xy=(0.46, 2.66), xytext=(0.48, 1.35),
+                 arrowprops=dict(arrowstyle="->", color="#1f618d", lw=0.8), fontsize=6.0, color="#1f618d")
+    ax1.annotate(r"$P(\frac{2}{3})\approx 45.6$", xy=(2.0 / 3.0, 33250.0 / 729.0), xytext=(0.50, 36.0),
+                 arrowprops=dict(arrowstyle="->", color="#1f618d", lw=0.8), fontsize=6.0, color="#1f618d")
+    ax1.axvline(0.4, color="#555555", ls=":", lw=0.9)
     ax1.set_yscale("log")
+    ax1.set_ylim(0.03, 95.0)
     ax1.set_xlabel(r"Parameter $b \in [2/13, 2/3]$")
     ax1.set_ylabel(r"$P(b)$ & Bernstein min (log)")
     ax1.set_title("(a) Lemma 4.4 Bernstein positivity proof")
     ax1.grid(True, which="major", linestyle="--", alpha=0.35)
-    ax1.legend(loc="lower left", frameon=True, fontsize=6.2)
+    ax1.legend(loc="lower left", frameon=True, fontsize=5.4, framealpha=0.92)
 
     # Panel (b): Exact Bernstein coefficients beta_0..beta_7 on both intervals
     from fractions import Fraction
